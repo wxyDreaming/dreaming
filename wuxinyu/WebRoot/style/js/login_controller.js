@@ -4,14 +4,14 @@
 
 $(function () {
     $("#userName").change(function () {
-        var userName = $("#userName").val().replace(/\s+/g, "");
-        $.post("loginController/isExist.do",
+        var account = $("#userName").val().replace(/\s+/g, "");
+        $.post("userController/isExist",
             {
-                userName: userName
+        		account: account
             }, function (data) {
-                if (data == "fail") {
+                if (data.code == "1") {
                     swal({
-                        title: "用户不存在",
+                        title: "该用户不存在",
                         type: "error"
                     });
                 }

@@ -27,6 +27,11 @@ public class LoginController {
 	
 	@RequestMapping("/login")
 	public RestResponse login(String account,String password,HttpServletRequest request,HttpServletResponse response){
+		response.addHeader("Access-Control-Allow-Origin", "*");
+		response.addHeader("Access-Control-Allow-Methods", "POST, GET, OPTIONS, DELETE");
+		response.addHeader("Access-Control-Max-Age", "3600");
+		response.addHeader("Access-Control-Allow-Headers", "x-requested-with");
+		
 		HttpSession session = request.getSession();
 		if(StringUtils.isNotEmpty(account) && StringUtils.isNotEmpty(password)){
 			User user = userService.getUser(account,password);
@@ -43,17 +48,22 @@ public class LoginController {
 				userMap.put(user.getAccount(), user);
 				session.setAttribute(Constant.USER, user);
 				application.setAttribute(Constant.USERMAP, userMap);
+				return new RestResponse(user.getAccount());
 			}else {
-				return new RestResponse("没有此用户",0);
+				return new RestResponse("用户名或密码错误",0);
 			}
 		}else{
 			return new RestResponse("没有输入用户名或密码",0);
 		}
-		return new RestResponse();
 	}
 	
 	@RequestMapping("/logout")
 	public RestResponse logout(String account,HttpServletRequest request,HttpServletResponse response){
+		response.addHeader("Access-Control-Allow-Origin", "*");
+		response.addHeader("Access-Control-Allow-Methods", "POST, GET, OPTIONS, DELETE");
+		response.addHeader("Access-Control-Max-Age", "3600");
+		response.addHeader("Access-Control-Allow-Headers", "x-requested-with");
+		
 		HttpSession session = request.getSession();
 		ServletContext application = session.getServletContext();
 		Map<String, User> userMap = (Map<String, User>)application.getAttribute(Constant.USERMAP);

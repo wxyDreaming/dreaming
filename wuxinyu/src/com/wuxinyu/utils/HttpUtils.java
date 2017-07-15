@@ -153,8 +153,7 @@ public class HttpUtils {
 	 */
 	private static String httpGet(String url) {
 		try {
-			HttpEntity entity = Request.Get(url).
-					execute().returnResponse().getEntity();
+			HttpEntity entity = Request.Get(url).execute().returnResponse().getEntity();
 			return entity != null ? EntityUtils.toString(entity) : null;
 		} catch (Exception e) {
 			logger.error("get请求异常，" + e.getMessage() + "\n get url:" + url);

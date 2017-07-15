@@ -33,7 +33,7 @@
 	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/slf4j-api-1.6.1.jar"/>
 	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/slf4j-api-1.7.1.jar"/>
 	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/slf4j-log4j12-1.7.1.jar"/>
-	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/spring-aop-4.3.3.RELEASE.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/spring-aop-4.3.3.RELEASE.jar" sourcepath="C:/Users/wxy/AppData/Local/Temp/decompiler/source/spring-aop-4.3.3.RELEASE-sources.jar"/>
 	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/spring-aspects-4.3.3.RELEASE.jar"/>
 	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/spring-beans-4.3.3.RELEASE.jar"/>
 	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/spring-context-4.3.3.RELEASE.jar" sourcepath="C:/Users/wxy/AppData/Local/Temp/decompiler/source/spring-context-4.3.3.RELEASE-sources.jar"/>
@@ -50,7 +50,7 @@
 	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/spring-orm-4.3.3.RELEASE.jar" sourcepath="C:/Users/wxy/AppData/Local/Temp/decompiler/source/spring-orm-4.3.3.RELEASE-sources.jar"/>
 	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/spring-oxm-4.3.3.RELEASE.jar"/>
 	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/spring-test-4.3.3.RELEASE.jar"/>
-	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/spring-tx-4.3.3.RELEASE.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/spring-tx-4.3.3.RELEASE.jar" sourcepath="C:/Users/wxy/AppData/Local/Temp/decompiler/source/spring-tx-4.3.3.RELEASE-sources.jar"/>
 	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/spring-web-4.3.3.RELEASE.jar"/>
 	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/spring-webmvc-4.3.3.RELEASE.jar"/>
 	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/standard.jar"/>
@@ -64,7 +64,7 @@
 	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/ant.jar"/>
 	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/commons-io-2.4.jar"/>
 	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/jackson-all-1.9.2.jar"/>
-	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/fluent-hc-4.3.6.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/fluent-hc-4.3.6.jar" sourcepath="C:/Users/wxy/AppData/Local/Temp/decompiler/source/fluent-hc-4.3.6-sources.jar"/>
 	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/jackson-annotations-2.4.5.jar"/>
 	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/jackson-core-2.4.5.jar"/>
 	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/jackson-databind-2.4.5.jar"/>

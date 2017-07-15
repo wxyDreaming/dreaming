@@ -1,5 +1,8 @@
 package com.wuxinyu.controller;
 
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
 import org.apache.commons.lang.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -21,7 +24,11 @@ public class UserController {
 	private IUserService userService;
 	
 	@RequestMapping(value = "/register",method = RequestMethod.POST)
-	public RestResponse registerUser(@RequestBody User user){
+	public RestResponse registerUser(@RequestBody User user,HttpServletRequest request,HttpServletResponse response){
+		response.addHeader("Access-Control-Allow-Origin", "*");
+		response.addHeader("Access-Control-Allow-Methods", "POST, GET, OPTIONS, DELETE");
+		response.addHeader("Access-Control-Max-Age", "3600");
+		response.addHeader("Access-Control-Allow-Headers", "x-requested-with");
 //		user.setAccount("wuxinyu");
 //		user.setAge(20);
 //		user.setCreateDate(DateUtil.getSystemTime());
@@ -41,7 +48,12 @@ public class UserController {
 	}
 	
 	@RequestMapping(value = "/updateUser",method = RequestMethod.POST)
-	public RestResponse updateUser(User user){
+	public RestResponse updateUser(User user,HttpServletRequest request,HttpServletResponse response){
+		response.addHeader("Access-Control-Allow-Origin", "*");
+		response.addHeader("Access-Control-Allow-Methods", "POST, GET, OPTIONS, DELETE");
+		response.addHeader("Access-Control-Max-Age", "3600");
+		response.addHeader("Access-Control-Allow-Headers", "x-requested-with");
+		
 		Integer id = user.getId();
 		String account = user.getAccount();
 		String tel = user.getTel();
@@ -74,7 +86,12 @@ public class UserController {
 	}
 	
 	@RequestMapping(value = "/isExist")
-	public RestResponse isExist(String account){
+	public RestResponse isExist(String account,HttpServletRequest request,HttpServletResponse response){
+		response.addHeader("Access-Control-Allow-Origin", "*");
+		response.addHeader("Access-Control-Allow-Methods", "POST, GET, OPTIONS, DELETE");
+		response.addHeader("Access-Control-Max-Age", "3600");
+		response.addHeader("Access-Control-Allow-Headers", "x-requested-with");
+		
 		User user = userService.findByAccount(account);
 		if(user != null){
 			return new RestResponse("该用户已存在",0);
