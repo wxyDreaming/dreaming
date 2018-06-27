@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="description" content="">
-  <meta name="keywords" content="">
+  <meta name="description" content="欢迎来到无心鱼的小窝！">
+  <meta name="keywords" content="枯鱼|无心鱼|旅行|行走在路上">
   <meta name="viewport"
         content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
   <title>枯鱼 | 注册</title>
@@ -35,6 +35,7 @@
 
   <link rel="stylesheet" href="assets/css/amazeui.min.css">
   <link rel="stylesheet" href="assets/css/app.css">
+  <link rel="stylesheet" href="assets/css/sweet-alert.css">
 </head>
 <body>
 <header>
@@ -52,23 +53,27 @@
   <div class="am-u-lg-3 am-u-md-6 am-u-sm-8 am-u-sm-centered log-content">
     <h1 class="log-title am-animation-slide-top">注 册</h1>
     <br>
-    <form class="am-form" id="log-form">
       <div class="am-input-group am-radius am-animation-slide-left">       
-        <input type="text" id="doc-vld-email-2-1" class="am-radius" data-validation-message="账号不能为空" placeholder="账号" required/>
+        <input type="text" id="register-nickname" class="am-form-field am-radius log-input" placeholder="昵称" required/>
         <span class="am-input-group-label log-icon am-radius"><i class="am-icon-user am-icon-sm am-icon-fw"></i></span>
       </div>
       <br>
+      <div class="am-input-group am-radius am-animation-slide-left">       
+        <input type="text" id="register-account" class="am-form-field am-radius log-input" placeholder="账号" required/>
+        <span class="am-input-group-label log-icon am-radius"><i id ="user-fish" class="am-icon-user am-icon-sm am-icon-fw"></i></span>
+      </div>
+      <br>
       <div class="am-input-group am-animation-slide-left log-animation-delay">       
-        <input type="password" id="log-password" class="am-form-field am-radius log-input" placeholder="密码" minlength="1" required>
+        <input type="password" id="register-password" class="am-form-field am-radius log-input" placeholder="密码" required>
         <span class="am-input-group-label log-icon am-radius"><i class="am-icon-lock am-icon-sm am-icon-fw"></i></span>
       </div>
       <br>   
       <div class="am-input-group am-animation-slide-left log-animation-delay-a">       
-        <input type="password" data-equal-to="#log-password" class="am-form-field am-radius log-input" placeholder="确认密码" data-validation-message="请确认密码一致" required>
+        <input type="password" id="confirm-password" class="am-form-field am-radius log-input" placeholder="确认密码" required>
         <span class="am-input-group-label log-icon am-radius"><i class="am-icon-lock am-icon-sm am-icon-fw"></i></span>
       </div>
       <br>
-      <button type="submit" class="am-btn am-btn-primary am-btn-block am-btn-lg am-radius am-animation-slide-bottom log-animation-delay-b">注 册</button>
+      <button id="register-submit" class="am-btn am-btn-primary am-btn-block am-btn-lg am-radius am-animation-slide-bottom log-animation-delay-b">注 册</button>
       <br>
 <!--       <div class="am-btn-group am-animation-slide-bottom"> -->
 <!--       <p>支持第三方注册</p> -->
@@ -76,11 +81,10 @@
 <!--       <a href="#" class="am-btn am-btn-success am-btn-sm"><i class="am-icon-google-plus-square am-icon-sm"></i> Google+</a> -->
 <!--       <a href="#" class="am-btn am-btn-primary am-btn-sm"><i class="am-icon-stack-overflow am-icon-sm"></i> stackOverflow</a> -->
 <!--       </div> -->
-    </form>
   </div>
   </div>
   <footer class="log-footer">   
-    © 2017 AllMobilize, Inc. Licensed under MIT license. Made with love By WuXinYu.
+    © 2017 AllMobilize, Made with love By WuXinYu.
   </footer>
 </div>
 
@@ -94,7 +98,10 @@
 <script src="http://cdn.staticfile.org/modernizr/2.8.3/modernizr.js"></script>
 <script src="assets/js/amazeui.ie8polyfill.min.js"></script>
 <![endif]-->
+<script src="assets/js/sweet-alert.js"></script>
 <script src="assets/js/amazeui.min.js"></script>
-<script src="assets/js/app.js"></script>
+<script src="myjs/main.js"></script>
+<script src="myjs/register.js"></script>
+<script src="myjs/clickSpecialEffect.js"></script>
 </body>
 </html>

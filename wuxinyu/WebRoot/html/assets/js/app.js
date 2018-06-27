@@ -24,7 +24,7 @@ $(function() {
 	                	 $('#user-fish').removeClass("am-icon-spinner am-icon-spin");
 	                	 $('#user-fish').addClass("am-icon-user");
 	                 }
-	          }
+	            }
 	    	});
 		}else{
 			$('#account-fish').text("请输入您的账号");
@@ -52,7 +52,7 @@ $(function() {
 //	    		async: false,
 	    		success: function(data){
 	    			if(data.code == "1"){
-	    				sessionStorage.setItem('user', data.user);
+	    				sessionStorage.setItem('user', JSON.stringify(data.user));
 	    				window.location.href="index.html";
 	    			} 
 	    			if(data.code == "0"){
@@ -60,7 +60,7 @@ $(function() {
 	    			}
 	           },
 	           error:function(){
-	        	  
+	        	   swal("服务器异常，请稍后再试");
 	          }
 	    	});
 	    }

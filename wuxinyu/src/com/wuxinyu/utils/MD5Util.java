@@ -8,7 +8,6 @@ import java.security.NoSuchAlgorithmException;
  * <p>
  *     将用户的密码用MD5进行加密
  * </p>
- * Created by limbo on 2016/11/28.
  */
 public class MD5Util {
 

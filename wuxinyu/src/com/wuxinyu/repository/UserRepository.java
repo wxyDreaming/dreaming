@@ -1,16 +1,13 @@
 package com.wuxinyu.repository;
 
-import java.io.Serializable;
-
 import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.JpaSpecificationExecutor;
 
 import com.wuxinyu.entity.User;
 
-public interface UserRepository extends JpaRepository<User, Serializable>{
+public interface UserRepository extends JpaRepository<User, Integer>,JpaSpecificationExecutor<User> {
 
-	User findByAccountAndPassword(String account, String password);
-
-	User findByAccount(String account);
+	User findByAccountOrTel(String account,String tel);
 
 	User findByIdOrAccountOrTel(Integer id, String account, String tel);
 	

@@ -8,8 +8,8 @@ import org.apache.commons.logging.LogFactory;
 
 /**
  * 
- * @author xwz
- * @time 2009-11-6 创建新文件和目录
+ * @author wxy
+ * @time 2017-11-6 创建新文件和目录
  */
 public class CreateFileUtil {
 

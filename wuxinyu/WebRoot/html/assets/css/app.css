@@ -117,7 +117,7 @@ body {
     font-size:4rem;
 }
 .log-content {
-    margin-top:15%;
+    margin-top:10%;
     text-align:center;
 }
 .log-button {
@@ -151,7 +151,7 @@ body {
     width: 165px;
     margin-left:10%;
     text-indent: -9999px;
-    background: url(/assets/i/xin1.png) left center no-repeat;
+    background: url(i/xin1.png) left center no-repeat;
     background-size: 125px 24px;
 }
 .log-header:hover {  
@@ -159,7 +159,7 @@ body {
     width: 165px;
     margin-left:10%;
     text-indent: -9999px;
-    background: url(/assets/i/xin2.png) left center no-repeat;
+    background: url(i/xin2.png) left center no-repeat;
     background-size:125px 24px;
 }
 .log a {

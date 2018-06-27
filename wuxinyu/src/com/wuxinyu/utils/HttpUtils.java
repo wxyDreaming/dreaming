@@ -20,8 +20,7 @@ import org.apache.log4j.Logger;
 
 /**
  * 
- * @author chengn
- * @date 2014年12月12日
+ * @date 2017年12月12日
  */
 public class HttpUtils {
 	private static Logger logger = LogManager.getLogger(HttpUtils.class);

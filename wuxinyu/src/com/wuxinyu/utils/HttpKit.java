@@ -36,7 +36,6 @@ import net.sf.json.JSONObject;
 /**
  * apache http Method
  * 
- * @author fangkeliu
  * 
  */
 public class HttpKit {

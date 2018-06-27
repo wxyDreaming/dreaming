@@ -19,7 +19,10 @@ public class User {
 	private String sex;				//性别
 	private Integer status;			//状态  1 未删除 0删除
 	private String createDate;		//创建时间
-	
+	private String portrait;		//头像路径
+	private String brief;			//简介
+	private String lasttime;		//最后登录时间
+ 	
 	@Id
 	@GeneratedValue
 	public Integer getId() {
@@ -87,6 +90,24 @@ public class User {
 	}
 	public void setQq(String qq) {
 		this.qq = qq;
+	}
+	public String getPortrait() {
+		return portrait;
+	}
+	public void setPortrait(String portrait) {
+		this.portrait = portrait;
+	}
+	public String getBrief() {
+		return brief;
+	}
+	public void setBrief(String brief) {
+		this.brief = brief;
+	}
+	public String getLasttime() {
+		return lasttime;
+	}
+	public void setLasttime(String lasttime) {
+		this.lasttime = lasttime;
 	}
 	
 }

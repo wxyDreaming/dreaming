@@ -1,10 +1,10 @@
-<!doctype html>
+﻿<!doctype html>
 <html>
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="description" content="">
-  <meta name="keywords" content="">
+  <meta name="description" content="欢迎来到无心鱼的小窝！">
+  <meta name="keywords" content="枯鱼|无心鱼|旅行|行走在路上|捡人">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
   <meta name="renderer" content="webkit">
   <meta http-equiv="Cache-Control" content="no-siteapp"/>
@@ -58,19 +58,23 @@
 	      <li><a href="timeline.html">存档</a></li>
 	    </ul>
 	    <form class="am-topbar-form am-topbar-right am-form-inline" role="search">
-	      <div class="am-form-group">
-	        <input type="text" class="am-form-field am-input-sm" placeholder="搜索">
-	      </div>
-	      	<a class="am-btn am-btn-secondary am-radius" href="login.html">登录</a>
-	      	<a class="am-btn am-btn-secondary am-radius" href="register.html">注册</a>
-			&nbsp;&nbsp;&nbsp;<!-- 头像栏 -->	
-<!-- 			<div class="am-dropdown" data-am-dropdown> -->
-<!-- 				<img src="images/photo.jpg" class="am-dropdown-toggle am-circle" height="45px"/> -->
-<!-- 				<div class="am-dropdown-content"> -->
-<!-- 					<a href="#">I am what I am</a> -->
-<!-- 					<p>多么高兴 在琉璃屋中快乐生活 对世界说 甚么是光明和磊落 我就是我 是颜色不一样的烟火</p> -->
-<!-- 				</div> -->
-<!-- 			</div> -->
+	        <div class="am-form-group">
+	        	<input type="text" class="am-form-field am-input-sm" placeholder="搜索">
+	        </div>
+	      	<div id="login-fish" style="display: inline;">
+	      		<a class="am-btn am-btn-secondary am-radius" href="login.html">登录</a>
+	      		<a class="am-btn am-btn-secondary am-radius" href="register.html">注册</a>
+			</div>
+			&nbsp;&nbsp;&nbsp;<!-- 头像栏 -->
+			<div id="photo-fish" style="display: inline;">
+				<div class="am-dropdown" data-am-dropdown>
+					<img src="images/photo.jpg" class="am-dropdown-toggle am-circle" height="45px"/>
+					<div class="am-dropdown-content">
+						<button id="logOut-fish" class="am-btn am-btn-primary am-btn-block am-btn-lg am-radius">退出</button>
+					</div>
+				</div>
+			</div>
+			
 		</form>
 	  </div>
 	</nav>
@@ -373,8 +377,8 @@
 			</a>
 		</div>
 
-
 	</footer>
+	<audio src="assets/mp3/fish.mp3" autoplay="autoplay"></audio>
 
 <!--[if (gte IE 9)|!(IE)] -->
 <script src="assets/js/jquery.min.js"></script>
@@ -385,5 +389,7 @@
 <script src="assets/js/amazeui.ie8polyfill.min.js"></script>
 <![endif]-->
 <script src="assets/js/amazeui.min.js"></script>
+<script src="myjs/main.js"></script>
+<script src="myjs/clickSpecialEffect.js"></script>
 </body>
 </html>

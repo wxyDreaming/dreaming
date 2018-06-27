@@ -9,7 +9,6 @@ import java.security.MessageDigest;
 
 /**
  * 文件MD5值的计算方法
- * @author fangkeliu
  * @Date 2011-10-20
  * @version 1.0.0
  */

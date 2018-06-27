@@ -54,6 +54,7 @@ $('.input-group-btn').click(function(){
 	if (!mobile) {
 		alert("请输入手机号码！");
 	} else {
+		debugger;
 		$.ajax({
 			url: getUrl('/pc/sendCode'), 
 			type:'POST',
